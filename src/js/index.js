@@ -12,6 +12,7 @@ import Home from "./component/home.jsx";
 //render your react application
 let counter = 0;
 setInterval(() => {
+    // La variable "counter" representa los segundos transcurridos, y la recibe como parámetro el componente Home
     ReactDOM.render(<Home digits={counter}/>, document.querySelector("#app"));
     counter++;
 }, 1000);
